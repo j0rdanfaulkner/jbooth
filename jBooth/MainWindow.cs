@@ -236,7 +236,11 @@ namespace jBooth
                     break;
             }
         }
-
+        /// <summary>
+        /// opens the form to configure the settings of jBooth
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSettings_Click(object sender, EventArgs e)
         {
             var settings = new Settings(this);
