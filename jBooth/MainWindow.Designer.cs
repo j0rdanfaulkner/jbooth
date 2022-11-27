@@ -112,6 +112,7 @@
             this.lblCaptureGallery.AutoSize = true;
             this.lblCaptureGallery.BackColor = System.Drawing.Color.Transparent;
             this.lblCaptureGallery.Font = new System.Drawing.Font("Eurostile LT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCaptureGallery.ForeColor = System.Drawing.Color.White;
             this.lblCaptureGallery.Location = new System.Drawing.Point(20, 12);
             this.lblCaptureGallery.Name = "lblCaptureGallery";
             this.lblCaptureGallery.Size = new System.Drawing.Size(132, 20);
@@ -155,6 +156,7 @@
             this.lblTimerEnabled.AutoSize = true;
             this.lblTimerEnabled.BackColor = System.Drawing.Color.Transparent;
             this.lblTimerEnabled.Font = new System.Drawing.Font("Eurostile LT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTimerEnabled.ForeColor = System.Drawing.Color.White;
             this.lblTimerEnabled.Location = new System.Drawing.Point(13, 107);
             this.lblTimerEnabled.Name = "lblTimerEnabled";
             this.lblTimerEnabled.Size = new System.Drawing.Size(173, 20);
@@ -188,6 +190,7 @@
             this.lblCaptureFormat.AutoSize = true;
             this.lblCaptureFormat.BackColor = System.Drawing.Color.Transparent;
             this.lblCaptureFormat.Font = new System.Drawing.Font("Eurostile LT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCaptureFormat.ForeColor = System.Drawing.Color.White;
             this.lblCaptureFormat.Location = new System.Drawing.Point(13, 85);
             this.lblCaptureFormat.Name = "lblCaptureFormat";
             this.lblCaptureFormat.Size = new System.Drawing.Size(193, 20);
@@ -201,6 +204,7 @@
             this.lblAvailableDevices.AutoSize = true;
             this.lblAvailableDevices.BackColor = System.Drawing.Color.Transparent;
             this.lblAvailableDevices.Font = new System.Drawing.Font("Eurostile LT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAvailableDevices.ForeColor = System.Drawing.Color.White;
             this.lblAvailableDevices.Location = new System.Drawing.Point(13, 9);
             this.lblAvailableDevices.Name = "lblAvailableDevices";
             this.lblAvailableDevices.Size = new System.Drawing.Size(197, 20);

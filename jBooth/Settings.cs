@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +17,9 @@ namespace jBooth
         public Settings(Form MainWindow)
         {
             InitializeComponent();
+            string versionNumber = FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileVersion.ToString();
+            lblAbout.Text = "jBooth v." + versionNumber;
+            lblCopyright.Text = "© Jordan Faulkner " + DateTime.Now.Year;
         }
 
         private void pbxDarkRed_Click(object sender, EventArgs e)
@@ -158,7 +163,11 @@ namespace jBooth
             Program.main.lblCaptureGallery.ForeColor = Color.White;
             Program.main.lblTimerEnabled.ForeColor = Color.White;
         }
-
+        /// <summary>
+        /// sets the typeface of jBooth to the select font using the combobox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cbxSelectedFont_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (cbxSelectedFont.SelectedIndex)
@@ -175,6 +184,7 @@ namespace jBooth
             Program.main.lblCaptureGallery.Font = new Font(fontname, Program.main.lblCaptureGallery.Font.Size);
             Program.main.lblTimerEnabled.Font = new Font(fontname, Program.main.lblTimerEnabled.Font.Size);
             Program.main.cbxAvailableDevices.Font = new Font(fontname, Program.main.cbxAvailableDevices.Font.Size);
+            Program.main.btnCapture.Font = new Font(fontname, Program.main.btnCapture.Font.Size);
             // default values
             if (fontname == "Eurostile LT Std")
             {
@@ -183,7 +193,26 @@ namespace jBooth
                 Program.main.lblCaptureGallery.Font = new Font(fontname, Program.main.lblCaptureGallery.Font.Size, FontStyle.Bold);
                 Program.main.lblTimerEnabled.Font = new Font(fontname, Program.main.lblTimerEnabled.Font.Size, FontStyle.Bold);
                 Program.main.cbxAvailableDevices.Font = new Font(fontname, Program.main.cbxAvailableDevices.Font.Size, FontStyle.Bold);
+                Program.main.btnCapture.Font = new Font(fontname, Program.main.btnCapture.Font.Size, FontStyle.Bold);
             }
+        }
+        /// <summary>
+        /// calls the 'SetLabelColoursBlack' method when clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnBlackFont_Click(object sender, EventArgs e)
+        {
+            SetLabelColoursBlack();
+        }
+        /// <summary>
+        /// calls the 'SetLabelColoursWhite' method when clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnWhiteFont_Click(object sender, EventArgs e)
+        {
+            SetLabelColoursWhite();
         }
     }
 }

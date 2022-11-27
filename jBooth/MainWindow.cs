@@ -23,6 +23,7 @@ namespace jBooth
         private string captureGallery3Location;
         private System.Timers.Timer captureTimer;
         private bool timerEnabled;
+        private bool timerRunning;
         int counter = 0;
         public MainWindow()
         {
@@ -131,6 +132,7 @@ namespace jBooth
                 captureTimer = new System.Timers.Timer(1000);
                 captureTimer.Start();
                 captureTimer.Enabled = true;
+                timerRunning = true;
                 captureTimer.Elapsed += OnTimedEvent;
             }
             else
@@ -165,15 +167,24 @@ namespace jBooth
 
         private void btnTimer_Click(object sender, EventArgs e)
         {
-            if (timerEnabled == false)
+            if (timerEnabled == false && timerRunning == false)
             {
                 timerEnabled = true;
                 lblTimerEnabled.Text = "Timer Enabled: True";
             }
-            else if (timerEnabled == true)
+            else if (timerEnabled == true && timerRunning == false)
             {
                 timerEnabled = false;
                 lblTimerEnabled.Text = "Timer Enabled: False";
+            }
+            else if (timerEnabled == false && timerRunning == true)
+            {
+                timerEnabled = false;
+                lblTimerEnabled.Text = "Timer Enabled: False";
+            }
+            else if (timerEnabled == true && timerRunning == true)
+            {
+                MessageBox.Show("Countdown timer is already running", "Countdown Timer Running", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         /// <summary>
@@ -207,6 +218,7 @@ namespace jBooth
                 captureTimer.Enabled = false;
                 captureTimer.Dispose();
                 timerEnabled = false;
+                timerRunning = false;
                 counter = 0;
                 // use invoke action to prevent cross-thread access error
                 Invoke((Action)(() => { lblTimerEnabled.Text = "Timer Enabled: False"; }));
