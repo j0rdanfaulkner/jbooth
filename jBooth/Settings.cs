@@ -150,7 +150,6 @@ namespace jBooth
         {
             Program.main.lblAvailableDevices.ForeColor = Color.Black;
             Program.main.lblCaptureFormat.ForeColor = Color.Black;
-            Program.main.lblCaptureGallery.ForeColor = Color.Black;
             Program.main.lblTimerEnabled.ForeColor = Color.Black;
         }
         /// <summary>
@@ -160,7 +159,6 @@ namespace jBooth
         {
             Program.main.lblAvailableDevices.ForeColor = Color.White;
             Program.main.lblCaptureFormat.ForeColor = Color.White;
-            Program.main.lblCaptureGallery.ForeColor = Color.White;
             Program.main.lblTimerEnabled.ForeColor = Color.White;
         }
         /// <summary>
@@ -181,7 +179,6 @@ namespace jBooth
         {
             Program.main.lblAvailableDevices.Font = new Font(fontname, Program.main.lblAvailableDevices.Font.Size);
             Program.main.lblCaptureFormat.Font = new Font(fontname, Program.main.lblCaptureFormat.Font.Size);
-            Program.main.lblCaptureGallery.Font = new Font(fontname, Program.main.lblCaptureGallery.Font.Size);
             Program.main.lblTimerEnabled.Font = new Font(fontname, Program.main.lblTimerEnabled.Font.Size);
             Program.main.cbxAvailableDevices.Font = new Font(fontname, Program.main.cbxAvailableDevices.Font.Size);
             Program.main.btnCapture.Font = new Font(fontname, Program.main.btnCapture.Font.Size);
@@ -190,7 +187,6 @@ namespace jBooth
             {
                 Program.main.lblAvailableDevices.Font = new Font(fontname, Program.main.lblAvailableDevices.Font.Size, FontStyle.Bold);
                 Program.main.lblCaptureFormat.Font = new Font(fontname, Program.main.lblCaptureFormat.Font.Size, FontStyle.Bold);
-                Program.main.lblCaptureGallery.Font = new Font(fontname, Program.main.lblCaptureGallery.Font.Size, FontStyle.Bold);
                 Program.main.lblTimerEnabled.Font = new Font(fontname, Program.main.lblTimerEnabled.Font.Size, FontStyle.Bold);
                 Program.main.cbxAvailableDevices.Font = new Font(fontname, Program.main.cbxAvailableDevices.Font.Size, FontStyle.Bold);
                 Program.main.btnCapture.Font = new Font(fontname, Program.main.btnCapture.Font.Size, FontStyle.Bold);

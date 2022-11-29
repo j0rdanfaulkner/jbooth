@@ -32,11 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.pnlBack = new System.Windows.Forms.Panel();
             this.pnlCaptureBar = new System.Windows.Forms.Panel();
-            this.pnlCaptureGallery = new System.Windows.Forms.Panel();
-            this.lblCaptureGallery = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pbxCaptureGallery1 = new System.Windows.Forms.PictureBox();
             this.lblTimerEnabled = new System.Windows.Forms.Label();
             this.btnTimer = new System.Windows.Forms.Button();
             this.lblCaptureFormat = new System.Windows.Forms.Label();
@@ -54,10 +49,6 @@
             this.ttpHelper = new System.Windows.Forms.ToolTip(this.components);
             this.pnlBack.SuspendLayout();
             this.pnlCaptureBar.SuspendLayout();
-            this.pnlCaptureGallery.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxCaptureGallery1)).BeginInit();
             this.pnlWebcam.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxWebcam)).BeginInit();
             this.pnlMenuBar.SuspendLayout();
@@ -80,7 +71,6 @@
             // 
             this.pnlCaptureBar.BackColor = System.Drawing.Color.SteelBlue;
             this.pnlCaptureBar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnlCaptureBar.Controls.Add(this.pnlCaptureGallery);
             this.pnlCaptureBar.Controls.Add(this.lblTimerEnabled);
             this.pnlCaptureBar.Controls.Add(this.btnTimer);
             this.pnlCaptureBar.Controls.Add(this.lblCaptureFormat);
@@ -93,62 +83,6 @@
             this.pnlCaptureBar.Size = new System.Drawing.Size(854, 150);
             this.pnlCaptureBar.TabIndex = 1;
             // 
-            // pnlCaptureGallery
-            // 
-            this.pnlCaptureGallery.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlCaptureGallery.Controls.Add(this.lblCaptureGallery);
-            this.pnlCaptureGallery.Controls.Add(this.pictureBox2);
-            this.pnlCaptureGallery.Controls.Add(this.pictureBox1);
-            this.pnlCaptureGallery.Controls.Add(this.pbxCaptureGallery1);
-            this.pnlCaptureGallery.Location = new System.Drawing.Point(499, -2);
-            this.pnlCaptureGallery.Name = "pnlCaptureGallery";
-            this.pnlCaptureGallery.Size = new System.Drawing.Size(350, 150);
-            this.pnlCaptureGallery.TabIndex = 4;
-            // 
-            // lblCaptureGallery
-            // 
-            this.lblCaptureGallery.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCaptureGallery.AutoSize = true;
-            this.lblCaptureGallery.BackColor = System.Drawing.Color.Transparent;
-            this.lblCaptureGallery.Font = new System.Drawing.Font("Eurostile LT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCaptureGallery.ForeColor = System.Drawing.Color.White;
-            this.lblCaptureGallery.Location = new System.Drawing.Point(20, 12);
-            this.lblCaptureGallery.Name = "lblCaptureGallery";
-            this.lblCaptureGallery.Size = new System.Drawing.Size(132, 20);
-            this.lblCaptureGallery.TabIndex = 5;
-            this.lblCaptureGallery.Text = "Capture Gallery";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.Location = new System.Drawing.Point(244, 46);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(72, 72);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(134, 46);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(72, 72);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pbxCaptureGallery1
-            // 
-            this.pbxCaptureGallery1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxCaptureGallery1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbxCaptureGallery1.Location = new System.Drawing.Point(24, 46);
-            this.pbxCaptureGallery1.Name = "pbxCaptureGallery1";
-            this.pbxCaptureGallery1.Size = new System.Drawing.Size(72, 72);
-            this.pbxCaptureGallery1.TabIndex = 0;
-            this.pbxCaptureGallery1.TabStop = false;
-            // 
             // lblTimerEnabled
             // 
             this.lblTimerEnabled.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -159,13 +93,14 @@
             this.lblTimerEnabled.ForeColor = System.Drawing.Color.White;
             this.lblTimerEnabled.Location = new System.Drawing.Point(13, 107);
             this.lblTimerEnabled.Name = "lblTimerEnabled";
-            this.lblTimerEnabled.Size = new System.Drawing.Size(173, 20);
+            this.lblTimerEnabled.Size = new System.Drawing.Size(215, 25);
             this.lblTimerEnabled.TabIndex = 6;
             this.lblTimerEnabled.Text = "Timer Enabled: False";
             // 
             // btnTimer
             // 
-            this.btnTimer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnTimer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTimer.BackColor = System.Drawing.Color.Transparent;
             this.btnTimer.BackgroundImage = global::jBooth.Properties.Resources.stopwatch;
             this.btnTimer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -174,9 +109,9 @@
             this.btnTimer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnTimer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnTimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimer.Location = new System.Drawing.Point(292, 41);
+            this.btnTimer.Location = new System.Drawing.Point(752, 37);
             this.btnTimer.Name = "btnTimer";
-            this.btnTimer.Size = new System.Drawing.Size(64, 64);
+            this.btnTimer.Size = new System.Drawing.Size(72, 72);
             this.btnTimer.TabIndex = 5;
             this.btnTimer.UseVisualStyleBackColor = false;
             this.btnTimer.Click += new System.EventHandler(this.btnTimer_Click);
@@ -193,7 +128,7 @@
             this.lblCaptureFormat.ForeColor = System.Drawing.Color.White;
             this.lblCaptureFormat.Location = new System.Drawing.Point(13, 85);
             this.lblCaptureFormat.Name = "lblCaptureFormat";
-            this.lblCaptureFormat.Size = new System.Drawing.Size(193, 20);
+            this.lblCaptureFormat.Size = new System.Drawing.Size(243, 25);
             this.lblCaptureFormat.TabIndex = 3;
             this.lblCaptureFormat.Text = "Capture Format: Photo";
             // 
@@ -207,7 +142,7 @@
             this.lblAvailableDevices.ForeColor = System.Drawing.Color.White;
             this.lblAvailableDevices.Location = new System.Drawing.Point(13, 9);
             this.lblAvailableDevices.Name = "lblAvailableDevices";
-            this.lblAvailableDevices.Size = new System.Drawing.Size(197, 20);
+            this.lblAvailableDevices.Size = new System.Drawing.Size(247, 25);
             this.lblAvailableDevices.TabIndex = 2;
             this.lblAvailableDevices.Text = "Available Video Devices:";
             // 
@@ -241,7 +176,7 @@
             this.cbxAvailableDevices.FormattingEnabled = true;
             this.cbxAvailableDevices.Location = new System.Drawing.Point(13, 41);
             this.cbxAvailableDevices.Name = "cbxAvailableDevices";
-            this.cbxAvailableDevices.Size = new System.Drawing.Size(273, 28);
+            this.cbxAvailableDevices.Size = new System.Drawing.Size(273, 33);
             this.cbxAvailableDevices.TabIndex = 0;
             // 
             // pnlWebcam
@@ -356,7 +291,7 @@
             // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1004, 600);
@@ -371,11 +306,6 @@
             this.pnlBack.ResumeLayout(false);
             this.pnlCaptureBar.ResumeLayout(false);
             this.pnlCaptureBar.PerformLayout();
-            this.pnlCaptureGallery.ResumeLayout(false);
-            this.pnlCaptureGallery.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxCaptureGallery1)).EndInit();
             this.pnlWebcam.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbxWebcam)).EndInit();
             this.pnlMenuBar.ResumeLayout(false);
@@ -400,11 +330,6 @@
         public Label lblAvailableDevices;
         public Panel pnlWebcam;
         public PictureBox pbxWebcam;
-        public Label lblCaptureGallery;
-        public Panel pnlCaptureGallery;
-        public PictureBox pictureBox2;
-        public PictureBox pictureBox1;
-        public PictureBox pbxCaptureGallery1;
         public Button btnTimer;
         public ToolTip ttpHelper;
         public Label lblTimerEnabled;
