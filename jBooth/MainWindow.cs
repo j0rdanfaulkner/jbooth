@@ -1,12 +1,16 @@
+using AForge;
+using Accord;
 using AForge.Video;
 using AForge.Video.DirectShow;
+using Accord.Video.VFW;
+using Accord.Video.FFMPEG;
+using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Timers;
 using System.Net.NetworkInformation;
 using System.Windows.Forms;
 using System.Diagnostics;
-using static System.Windows.Forms.DataFormats;
 
 namespace jBooth
 {
@@ -16,11 +20,10 @@ namespace jBooth
         private string captureFormat;
         private int width;
         private int height;
-        FilterInfoCollection filterInfoCollection;
-        VideoCaptureDevice videoCaptureDevice;
-        private string captureGallery1Location;
-        private string captureGallery2Location;
-        private string captureGallery3Location;
+        private FilterInfoCollection filterInfoCollection;
+        private VideoCaptureDevice videoCaptureDevices;
+        private VideoFileWriter videoWriter;
+        private Bitmap videoFrame;
         private System.Timers.Timer captureTimer;
         private bool timerEnabled;
         private bool timerRunning;
@@ -44,24 +47,32 @@ namespace jBooth
             {
                 cbxAvailableDevices.Items.Add(filterInfo.Name);
                 cbxAvailableDevices.SelectedIndex = 0;
-                videoCaptureDevice = new VideoCaptureDevice();
+                videoCaptureDevices = new VideoCaptureDevice();
             }
-            videoCaptureDevice = new VideoCaptureDevice(filterInfoCollection[cbxAvailableDevices.SelectedIndex].MonikerString);
-            videoCaptureDevice.NewFrame += VideoCaptureDevice_NewFrame;
-            videoCaptureDevice.Start();
+            videoCaptureDevices = new VideoCaptureDevice(filterInfoCollection[cbxAvailableDevices.SelectedIndex].MonikerString);
+            videoCaptureDevices.NewFrame += VideoCaptureDevice_NewFrame;
+            videoCaptureDevices.Start();
         }
         private void VideoCaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
-            pbxWebcam.Image = (Bitmap)eventArgs.Frame.Clone();
+            if (captureFormat == "photo")
+            {
+                pbxWebcam.Image = (Bitmap)eventArgs.Frame.Clone();
+            }
+            else if (captureFormat == "video")
+            {
+                pbxWebcam.Image = (Bitmap)eventArgs.Frame.Clone();
+                videoFrame = (Bitmap)pbxWebcam.Image;
+            }
         }
         private void MainWindow_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (videoCaptureDevice.IsRunning == true)
+            if (videoCaptureDevices.IsRunning == true)
             {
                 DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit jBooth", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
-                    videoCaptureDevice.SignalToStop();
+                    videoCaptureDevices.SignalToStop();
                     Application.Exit();
                 }
                 else
@@ -76,7 +87,6 @@ namespace jBooth
             {
                 captureClicked = true;
                 Bitmap capture = new Bitmap(pbxWebcam.Image, width * 2, height * 2);
-                Directory.SetCurrentDirectory("C:\\");
                 string currentFolder = Directory.GetCurrentDirectory();
                 string photosFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
                 string captureFolderPath = string.Format("{0}\\jBooth\\captures", photosFolder);
@@ -86,7 +96,7 @@ namespace jBooth
                 datetime = datetime.Replace(":", "-");
                 sfdSaveFile.FileName = string.Format("img_{0}", datetime);
                 sfdSaveFile.Filter = "Bitmap Image|*.bmp|JPG Image|*.jpg|PNG Image|*.png";
-                sfdSaveFile.Title = "Save Capture";
+                sfdSaveFile.Title = "Save Image Capture";
                 // use invoke action to prevent cross-thread access error when showing the save file dialog
                 Invoke((Action)(() => { sfdSaveFile.ShowDialog(); }));
                 FileStream fs = (FileStream)sfdSaveFile.OpenFile();
@@ -116,11 +126,23 @@ namespace jBooth
             else if (captureClicked == false && captureFormat == "video")
             {
                 captureClicked = true;
+                string datetime = DateTime.Now.ToString("s");
+                datetime = datetime.Replace(":", "-");
+                sfdSaveFile.FileName = string.Format("img_{0}", datetime);
+                sfdSaveFile.Filter = "MP4 Video|*.mp4|AVI Video|*.avi";
+                sfdSaveFile.Title = "Save Video Capture";
+                // use invoke action to prevent cross-thread access error when showing the save file dialog
+                Invoke((Action)(() => { sfdSaveFile.ShowDialog(); }));
+                videoWriter.Open(sfdSaveFile.FileName, width, height);
+                for (int i = 0; i < 1000; i++)
+                {
+                    videoWriter.WriteVideoFrame(videoFrame);
+                }
+                videoWriter.Close();
                 btnCapture.BackgroundImage = Properties.Resources.stop;
             }
             else if (captureClicked == true && captureFormat == "video")
             {
-
                 captureClicked = false;
                 btnCapture.BackgroundImage = Properties.Resources.capture;
             }
@@ -150,9 +172,7 @@ namespace jBooth
         {
             captureFormat = "video";
             lblCaptureFormat.Text = "Capture Format: Video";
-            MessageBox.Show("This feature is coming soon...", "Video Coming Soon", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            captureFormat = "photo";
-            lblCaptureFormat.Text = "Capture Format: Photo";
+            MessageBox.Show("Video capture is still being developed", "Work In Progress", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnTimer_MouseEnter(object sender, EventArgs e)

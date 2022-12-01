@@ -71,11 +71,11 @@
             // 
             this.pnlCaptureBar.BackColor = System.Drawing.Color.SteelBlue;
             this.pnlCaptureBar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnlCaptureBar.Controls.Add(this.lblTimerEnabled);
             this.pnlCaptureBar.Controls.Add(this.btnTimer);
+            this.pnlCaptureBar.Controls.Add(this.btnCapture);
+            this.pnlCaptureBar.Controls.Add(this.lblTimerEnabled);
             this.pnlCaptureBar.Controls.Add(this.lblCaptureFormat);
             this.pnlCaptureBar.Controls.Add(this.lblAvailableDevices);
-            this.pnlCaptureBar.Controls.Add(this.btnCapture);
             this.pnlCaptureBar.Controls.Add(this.cbxAvailableDevices);
             this.pnlCaptureBar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlCaptureBar.Location = new System.Drawing.Point(150, 450);

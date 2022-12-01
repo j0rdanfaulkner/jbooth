@@ -8,6 +8,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>icon.ico</ApplicationIcon>
     <Title>jBooth</Title>
+    <Platforms>AnyCPU;x86</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,8 +16,57 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AForge.Video" Version="2.2.5" />
-    <PackageReference Include="AForge.Video.DirectShow" Version="2.2.5" />
+    <Reference Include="Accord">
+      <HintPath>bin\Debug\net6.0-windows\Accord.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Imaging">
+      <HintPath>bin\Debug\net6.0-windows\Accord.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math">
+      <HintPath>bin\Debug\net6.0-windows\Accord.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math.Core">
+      <HintPath>bin\Debug\net6.0-windows\Accord.Math.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Statistics">
+      <HintPath>bin\Debug\net6.0-windows\Accord.Statistics.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Video">
+      <HintPath>bin\Debug\net6.0-windows\Accord.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Video.DirectShow">
+      <HintPath>bin\Debug\net6.0-windows\Accord.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Video.FFMPEG">
+      <HintPath>..\..\..\..\..\.nuget\packages\accord.video.ffmpeg\3.8.0\lib\net462\Accord.Video.FFMPEG.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Video.VFW">
+      <HintPath>bin\Debug\net6.0-windows\Accord.Video.VFW.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge">
+      <HintPath>bin\Debug\net6.0-windows\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>bin\Debug\net6.0-windows\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math">
+      <HintPath>bin\Debug\net6.0-windows\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>bin\Debug\net6.0-windows\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.FFMPEG">
+      <HintPath>bin\Debug\net6.0-windows\AForge.Video.FFMPEG.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.VFW">
+      <HintPath>bin\Debug\net6.0-windows\AForge.Video.VFW.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Common">
+      <HintPath>..\..\..\..\..\.nuget\packages\system.drawing.common\7.0.0\lib\net6.0\System.Drawing.Common.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
