@@ -17,7 +17,7 @@ namespace jBooth
         public Settings(Form MainWindow)
         {
             InitializeComponent();
-            string versionNumber = FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileVersion.ToString();
+            string versionNumber = "1.0.0.4";
             lblAbout.Text = "jBooth v." + versionNumber;
             lblCopyright.Text = "© Jordan Faulkner " + DateTime.Now.Year;
         }

@@ -3,7 +3,6 @@ using Accord;
 using AForge.Video;
 using AForge.Video.DirectShow;
 using Accord.Video.VFW;
-using Accord.Video.FFMPEG;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
@@ -22,7 +21,6 @@ namespace jBooth
         private int height;
         private FilterInfoCollection filterInfoCollection;
         private VideoCaptureDevice videoCaptureDevices;
-        private VideoFileWriter videoWriter;
         private Bitmap videoFrame;
         private System.Timers.Timer captureTimer;
         private bool timerEnabled;
@@ -133,12 +131,6 @@ namespace jBooth
                 sfdSaveFile.Title = "Save Video Capture";
                 // use invoke action to prevent cross-thread access error when showing the save file dialog
                 Invoke((Action)(() => { sfdSaveFile.ShowDialog(); }));
-                videoWriter.Open(sfdSaveFile.FileName, width, height);
-                for (int i = 0; i < 1000; i++)
-                {
-                    videoWriter.WriteVideoFrame(videoFrame);
-                }
-                videoWriter.Close();
                 btnCapture.BackgroundImage = Properties.Resources.stop;
             }
             else if (captureClicked == true && captureFormat == "video")
