@@ -29,414 +29,407 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlThemeAppearence = new System.Windows.Forms.Panel();
-            this.btnWhiteFont = new System.Windows.Forms.Button();
-            this.btnBlackFont = new System.Windows.Forms.Button();
-            this.lblSelectFontColour = new System.Windows.Forms.Label();
-            this.lblCopyright = new System.Windows.Forms.Label();
-            this.lblAbout = new System.Windows.Forms.Label();
-            this.cbxSelectedFont = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblSelectFont = new System.Windows.Forms.Label();
-            this.btnDefaultSettings = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pbxPurple = new System.Windows.Forms.PictureBox();
-            this.lblSelectAccentColour = new System.Windows.Forms.Label();
-            this.pbxPink = new System.Windows.Forms.PictureBox();
-            this.btnCustomColour = new System.Windows.Forms.Button();
-            this.pbxBlue = new System.Windows.Forms.PictureBox();
-            this.pbxDarkRed = new System.Windows.Forms.PictureBox();
-            this.pbxSteelBlue = new System.Windows.Forms.PictureBox();
-            this.pbxRed = new System.Windows.Forms.PictureBox();
-            this.pbxSeaGreen = new System.Windows.Forms.PictureBox();
-            this.pbxOrangeRed = new System.Windows.Forms.PictureBox();
-            this.pbxGreen = new System.Windows.Forms.PictureBox();
-            this.pbxGold = new System.Windows.Forms.PictureBox();
-            this.pbxYellow = new System.Windows.Forms.PictureBox();
-            this.pbxLimeGreen = new System.Windows.Forms.PictureBox();
-            this.colorPicker = new System.Windows.Forms.ColorDialog();
-            this.panel1.SuspendLayout();
-            this.pnlThemeAppearence.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxPurple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxPink)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxBlue)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxDarkRed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxSteelBlue)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxRed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxSeaGreen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxOrangeRed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxGreen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxGold)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxYellow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxLimeGreen)).BeginInit();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            pnlThemeAppearence = new Panel();
+            btnWhiteFont = new Button();
+            btnBlackFont = new Button();
+            lblSelectFontColour = new Label();
+            lblCopyright = new Label();
+            lblAbout = new Label();
+            cbxSelectedFont = new ComboBox();
+            pictureBox1 = new PictureBox();
+            lblSelectFont = new Label();
+            btnDefaultSettings = new Button();
+            label1 = new Label();
+            pbxPurple = new PictureBox();
+            lblSelectAccentColour = new Label();
+            pbxPink = new PictureBox();
+            btnCustomColour = new Button();
+            pbxBlue = new PictureBox();
+            pbxDarkRed = new PictureBox();
+            pbxSteelBlue = new PictureBox();
+            pbxRed = new PictureBox();
+            pbxSeaGreen = new PictureBox();
+            pbxOrangeRed = new PictureBox();
+            pbxGreen = new PictureBox();
+            pbxGold = new PictureBox();
+            pbxYellow = new PictureBox();
+            pbxLimeGreen = new PictureBox();
+            colorPicker = new ColorDialog();
+            panel1.SuspendLayout();
+            pnlThemeAppearence.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxPurple).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxPink).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxBlue).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxDarkRed).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxSteelBlue).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxRed).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxSeaGreen).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxOrangeRed).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxGreen).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxGold).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxYellow).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxLimeGreen).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pnlThemeAppearence);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(704, 440);
-            this.panel1.TabIndex = 0;
+            panel1.Controls.Add(pnlThemeAppearence);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(704, 440);
+            panel1.TabIndex = 0;
             // 
             // pnlThemeAppearence
             // 
-            this.pnlThemeAppearence.AutoSize = true;
-            this.pnlThemeAppearence.Controls.Add(this.btnWhiteFont);
-            this.pnlThemeAppearence.Controls.Add(this.btnBlackFont);
-            this.pnlThemeAppearence.Controls.Add(this.lblSelectFontColour);
-            this.pnlThemeAppearence.Controls.Add(this.lblCopyright);
-            this.pnlThemeAppearence.Controls.Add(this.lblAbout);
-            this.pnlThemeAppearence.Controls.Add(this.cbxSelectedFont);
-            this.pnlThemeAppearence.Controls.Add(this.pictureBox1);
-            this.pnlThemeAppearence.Controls.Add(this.lblSelectFont);
-            this.pnlThemeAppearence.Controls.Add(this.btnDefaultSettings);
-            this.pnlThemeAppearence.Controls.Add(this.label1);
-            this.pnlThemeAppearence.Controls.Add(this.pbxPurple);
-            this.pnlThemeAppearence.Controls.Add(this.lblSelectAccentColour);
-            this.pnlThemeAppearence.Controls.Add(this.pbxPink);
-            this.pnlThemeAppearence.Controls.Add(this.btnCustomColour);
-            this.pnlThemeAppearence.Controls.Add(this.pbxBlue);
-            this.pnlThemeAppearence.Controls.Add(this.pbxDarkRed);
-            this.pnlThemeAppearence.Controls.Add(this.pbxSteelBlue);
-            this.pnlThemeAppearence.Controls.Add(this.pbxRed);
-            this.pnlThemeAppearence.Controls.Add(this.pbxSeaGreen);
-            this.pnlThemeAppearence.Controls.Add(this.pbxOrangeRed);
-            this.pnlThemeAppearence.Controls.Add(this.pbxGreen);
-            this.pnlThemeAppearence.Controls.Add(this.pbxGold);
-            this.pnlThemeAppearence.Controls.Add(this.pbxYellow);
-            this.pnlThemeAppearence.Controls.Add(this.pbxLimeGreen);
-            this.pnlThemeAppearence.Location = new System.Drawing.Point(0, 0);
-            this.pnlThemeAppearence.Name = "pnlThemeAppearence";
-            this.pnlThemeAppearence.Size = new System.Drawing.Size(704, 440);
-            this.pnlThemeAppearence.TabIndex = 15;
+            pnlThemeAppearence.AutoSize = true;
+            pnlThemeAppearence.Controls.Add(btnWhiteFont);
+            pnlThemeAppearence.Controls.Add(btnBlackFont);
+            pnlThemeAppearence.Controls.Add(lblSelectFontColour);
+            pnlThemeAppearence.Controls.Add(lblCopyright);
+            pnlThemeAppearence.Controls.Add(lblAbout);
+            pnlThemeAppearence.Controls.Add(cbxSelectedFont);
+            pnlThemeAppearence.Controls.Add(pictureBox1);
+            pnlThemeAppearence.Controls.Add(lblSelectFont);
+            pnlThemeAppearence.Controls.Add(btnDefaultSettings);
+            pnlThemeAppearence.Controls.Add(label1);
+            pnlThemeAppearence.Controls.Add(pbxPurple);
+            pnlThemeAppearence.Controls.Add(lblSelectAccentColour);
+            pnlThemeAppearence.Controls.Add(pbxPink);
+            pnlThemeAppearence.Controls.Add(btnCustomColour);
+            pnlThemeAppearence.Controls.Add(pbxBlue);
+            pnlThemeAppearence.Controls.Add(pbxDarkRed);
+            pnlThemeAppearence.Controls.Add(pbxSteelBlue);
+            pnlThemeAppearence.Controls.Add(pbxRed);
+            pnlThemeAppearence.Controls.Add(pbxSeaGreen);
+            pnlThemeAppearence.Controls.Add(pbxOrangeRed);
+            pnlThemeAppearence.Controls.Add(pbxGreen);
+            pnlThemeAppearence.Controls.Add(pbxGold);
+            pnlThemeAppearence.Controls.Add(pbxYellow);
+            pnlThemeAppearence.Controls.Add(pbxLimeGreen);
+            pnlThemeAppearence.Location = new Point(0, 0);
+            pnlThemeAppearence.Name = "pnlThemeAppearence";
+            pnlThemeAppearence.Size = new Size(704, 440);
+            pnlThemeAppearence.TabIndex = 15;
             // 
             // btnWhiteFont
             // 
-            this.btnWhiteFont.BackColor = System.Drawing.Color.Black;
-            this.btnWhiteFont.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnWhiteFont.FlatAppearance.BorderSize = 0;
-            this.btnWhiteFont.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWhiteFont.ForeColor = System.Drawing.Color.White;
-            this.btnWhiteFont.Location = new System.Drawing.Point(132, 322);
-            this.btnWhiteFont.Name = "btnWhiteFont";
-            this.btnWhiteFont.Size = new System.Drawing.Size(108, 28);
-            this.btnWhiteFont.TabIndex = 20;
-            this.btnWhiteFont.Text = "Abc";
-            this.btnWhiteFont.UseVisualStyleBackColor = false;
-            this.btnWhiteFont.Click += new System.EventHandler(this.btnWhiteFont_Click);
+            btnWhiteFont.BackColor = Color.Black;
+            btnWhiteFont.Cursor = Cursors.Hand;
+            btnWhiteFont.FlatAppearance.BorderSize = 0;
+            btnWhiteFont.FlatStyle = FlatStyle.Flat;
+            btnWhiteFont.ForeColor = Color.White;
+            btnWhiteFont.Location = new Point(132, 322);
+            btnWhiteFont.Name = "btnWhiteFont";
+            btnWhiteFont.Size = new Size(108, 28);
+            btnWhiteFont.TabIndex = 20;
+            btnWhiteFont.Text = "Abc";
+            btnWhiteFont.UseVisualStyleBackColor = false;
+            btnWhiteFont.Click += btnWhiteFont_Click;
             // 
             // btnBlackFont
             // 
-            this.btnBlackFont.BackColor = System.Drawing.Color.White;
-            this.btnBlackFont.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBlackFont.FlatAppearance.BorderSize = 0;
-            this.btnBlackFont.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBlackFont.Location = new System.Drawing.Point(18, 322);
-            this.btnBlackFont.Name = "btnBlackFont";
-            this.btnBlackFont.Size = new System.Drawing.Size(105, 28);
-            this.btnBlackFont.TabIndex = 19;
-            this.btnBlackFont.Text = "Abc";
-            this.btnBlackFont.UseVisualStyleBackColor = false;
-            this.btnBlackFont.Click += new System.EventHandler(this.btnBlackFont_Click);
+            btnBlackFont.BackColor = Color.White;
+            btnBlackFont.Cursor = Cursors.Hand;
+            btnBlackFont.FlatAppearance.BorderSize = 0;
+            btnBlackFont.FlatStyle = FlatStyle.Flat;
+            btnBlackFont.Location = new Point(18, 322);
+            btnBlackFont.Name = "btnBlackFont";
+            btnBlackFont.Size = new Size(105, 28);
+            btnBlackFont.TabIndex = 19;
+            btnBlackFont.Text = "Abc";
+            btnBlackFont.UseVisualStyleBackColor = false;
+            btnBlackFont.Click += btnBlackFont_Click;
             // 
             // lblSelectFontColour
             // 
-            this.lblSelectFontColour.AutoSize = true;
-            this.lblSelectFontColour.Font = new System.Drawing.Font("Eurostile LT Std Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSelectFontColour.Location = new System.Drawing.Point(15, 292);
-            this.lblSelectFontColour.Name = "lblSelectFontColour";
-            this.lblSelectFontColour.Size = new System.Drawing.Size(168, 20);
-            this.lblSelectFontColour.TabIndex = 18;
-            this.lblSelectFontColour.Text = "Select Font Colour:";
+            lblSelectFontColour.AutoSize = true;
+            lblSelectFontColour.Font = new Font("Eurostile LT Std Bold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSelectFontColour.Location = new Point(15, 292);
+            lblSelectFontColour.Name = "lblSelectFontColour";
+            lblSelectFontColour.Size = new Size(168, 20);
+            lblSelectFontColour.TabIndex = 18;
+            lblSelectFontColour.Text = "Select Font Colour:";
             // 
             // lblCopyright
             // 
-            this.lblCopyright.AutoSize = true;
-            this.lblCopyright.Location = new System.Drawing.Point(420, 186);
-            this.lblCopyright.Name = "lblCopyright";
-            this.lblCopyright.Size = new System.Drawing.Size(216, 20);
-            this.lblCopyright.TabIndex = 2;
-            this.lblCopyright.Text = "© Jordan Faulkner XXXX";
+            lblCopyright.AutoSize = true;
+            lblCopyright.Location = new Point(420, 186);
+            lblCopyright.Name = "lblCopyright";
+            lblCopyright.Size = new Size(216, 20);
+            lblCopyright.TabIndex = 2;
+            lblCopyright.Text = "© Jordan Faulkner XXXX";
             // 
             // lblAbout
             // 
-            this.lblAbout.AutoSize = true;
-            this.lblAbout.Location = new System.Drawing.Point(462, 160);
-            this.lblAbout.Name = "lblAbout";
-            this.lblAbout.Size = new System.Drawing.Size(141, 20);
-            this.lblAbout.TabIndex = 1;
-            this.lblAbout.Text = "jBooth v1.1.1.1";
+            lblAbout.AutoSize = true;
+            lblAbout.Location = new Point(462, 160);
+            lblAbout.Name = "lblAbout";
+            lblAbout.Size = new Size(141, 20);
+            lblAbout.TabIndex = 1;
+            lblAbout.Text = "jBooth v1.1.1.1";
             // 
             // cbxSelectedFont
             // 
-            this.cbxSelectedFont.BackColor = System.Drawing.Color.Silver;
-            this.cbxSelectedFont.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbxSelectedFont.FormattingEnabled = true;
-            this.cbxSelectedFont.Items.AddRange(new object[] {
-            "Arial",
-            "Impact",
-            "Segoe UI",
-            "Cooper Black",
-            "Georgia",
-            "Tahoma"});
-            this.cbxSelectedFont.Location = new System.Drawing.Point(18, 240);
-            this.cbxSelectedFont.Name = "cbxSelectedFont";
-            this.cbxSelectedFont.Size = new System.Drawing.Size(222, 28);
-            this.cbxSelectedFont.TabIndex = 17;
-            this.cbxSelectedFont.SelectedIndexChanged += new System.EventHandler(this.cbxSelectedFont_SelectedIndexChanged);
+            cbxSelectedFont.BackColor = Color.Silver;
+            cbxSelectedFont.FlatStyle = FlatStyle.Flat;
+            cbxSelectedFont.FormattingEnabled = true;
+            cbxSelectedFont.Items.AddRange(new object[] { "Arial", "Impact", "Segoe UI", "Cooper Black", "Georgia", "Tahoma" });
+            cbxSelectedFont.Location = new Point(18, 240);
+            cbxSelectedFont.Name = "cbxSelectedFont";
+            cbxSelectedFont.Size = new Size(222, 28);
+            cbxSelectedFont.TabIndex = 17;
+            cbxSelectedFont.SelectedIndexChanged += cbxSelectedFont_SelectedIndexChanged;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::jBooth.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(495, 23);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = Properties.Resources.logo;
+            pictureBox1.Location = new Point(495, 23);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(128, 128);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // lblSelectFont
             // 
-            this.lblSelectFont.AutoSize = true;
-            this.lblSelectFont.Font = new System.Drawing.Font("Eurostile LT Std Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSelectFont.Location = new System.Drawing.Point(14, 213);
-            this.lblSelectFont.Name = "lblSelectFont";
-            this.lblSelectFont.Size = new System.Drawing.Size(109, 20);
-            this.lblSelectFont.TabIndex = 16;
-            this.lblSelectFont.Text = "Select Font:";
+            lblSelectFont.AutoSize = true;
+            lblSelectFont.Font = new Font("Eurostile LT Std Bold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSelectFont.Location = new Point(14, 213);
+            lblSelectFont.Name = "lblSelectFont";
+            lblSelectFont.Size = new Size(109, 20);
+            lblSelectFont.TabIndex = 16;
+            lblSelectFont.Text = "Select Font:";
             // 
             // btnDefaultSettings
             // 
-            this.btnDefaultSettings.BackColor = System.Drawing.Color.Silver;
-            this.btnDefaultSettings.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnDefaultSettings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.btnDefaultSettings.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDefaultSettings.Location = new System.Drawing.Point(18, 369);
-            this.btnDefaultSettings.Name = "btnDefaultSettings";
-            this.btnDefaultSettings.Size = new System.Drawing.Size(222, 32);
-            this.btnDefaultSettings.TabIndex = 15;
-            this.btnDefaultSettings.Text = "Reset to Defaults";
-            this.btnDefaultSettings.UseVisualStyleBackColor = false;
-            this.btnDefaultSettings.Click += new System.EventHandler(this.btnDefaultSettings_Click);
+            btnDefaultSettings.BackColor = Color.Silver;
+            btnDefaultSettings.FlatAppearance.MouseDownBackColor = Color.Gray;
+            btnDefaultSettings.FlatAppearance.MouseOverBackColor = Color.LightGray;
+            btnDefaultSettings.FlatStyle = FlatStyle.Popup;
+            btnDefaultSettings.Location = new Point(18, 369);
+            btnDefaultSettings.Name = "btnDefaultSettings";
+            btnDefaultSettings.Size = new Size(222, 32);
+            btnDefaultSettings.TabIndex = 15;
+            btnDefaultSettings.Text = "Reset to Defaults";
+            btnDefaultSettings.UseVisualStyleBackColor = false;
+            btnDefaultSettings.Click += btnDefaultSettings_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Eurostile LT Std Ext Two", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(346, 33);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Theme / Appearence";
+            label1.AutoSize = true;
+            label1.Font = new Font("Eurostile LT Std Ext Two", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(12, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(346, 33);
+            label1.TabIndex = 2;
+            label1.Text = "Theme / Appearance";
             // 
             // pbxPurple
             // 
-            this.pbxPurple.BackColor = System.Drawing.Color.Indigo;
-            this.pbxPurple.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbxPurple.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxPurple.Location = new System.Drawing.Point(170, 119);
-            this.pbxPurple.Name = "pbxPurple";
-            this.pbxPurple.Size = new System.Drawing.Size(32, 32);
-            this.pbxPurple.TabIndex = 14;
-            this.pbxPurple.TabStop = false;
-            this.pbxPurple.Click += new System.EventHandler(this.pbxPurple_Click);
+            pbxPurple.BackColor = Color.Indigo;
+            pbxPurple.BorderStyle = BorderStyle.FixedSingle;
+            pbxPurple.Cursor = Cursors.Hand;
+            pbxPurple.Location = new Point(170, 119);
+            pbxPurple.Name = "pbxPurple";
+            pbxPurple.Size = new Size(32, 32);
+            pbxPurple.TabIndex = 14;
+            pbxPurple.TabStop = false;
+            pbxPurple.Click += pbxPurple_Click;
             // 
             // lblSelectAccentColour
             // 
-            this.lblSelectAccentColour.AutoSize = true;
-            this.lblSelectAccentColour.Font = new System.Drawing.Font("Eurostile LT Std Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSelectAccentColour.Location = new System.Drawing.Point(14, 55);
-            this.lblSelectAccentColour.Name = "lblSelectAccentColour";
-            this.lblSelectAccentColour.Size = new System.Drawing.Size(188, 20);
-            this.lblSelectAccentColour.TabIndex = 0;
-            this.lblSelectAccentColour.Text = "Select Accent Colour:";
+            lblSelectAccentColour.AutoSize = true;
+            lblSelectAccentColour.Font = new Font("Eurostile LT Std Bold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSelectAccentColour.Location = new Point(14, 55);
+            lblSelectAccentColour.Name = "lblSelectAccentColour";
+            lblSelectAccentColour.Size = new Size(188, 20);
+            lblSelectAccentColour.TabIndex = 0;
+            lblSelectAccentColour.Text = "Select Accent Colour:";
             // 
             // pbxPink
             // 
-            this.pbxPink.BackColor = System.Drawing.Color.Orchid;
-            this.pbxPink.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbxPink.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxPink.Location = new System.Drawing.Point(208, 119);
-            this.pbxPink.Name = "pbxPink";
-            this.pbxPink.Size = new System.Drawing.Size(32, 32);
-            this.pbxPink.TabIndex = 13;
-            this.pbxPink.TabStop = false;
-            this.pbxPink.Click += new System.EventHandler(this.pbxPink_Click);
+            pbxPink.BackColor = Color.Orchid;
+            pbxPink.BorderStyle = BorderStyle.FixedSingle;
+            pbxPink.Cursor = Cursors.Hand;
+            pbxPink.Location = new Point(208, 119);
+            pbxPink.Name = "pbxPink";
+            pbxPink.Size = new Size(32, 32);
+            pbxPink.TabIndex = 13;
+            pbxPink.TabStop = false;
+            pbxPink.Click += pbxPink_Click;
             // 
             // btnCustomColour
             // 
-            this.btnCustomColour.BackColor = System.Drawing.Color.Silver;
-            this.btnCustomColour.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnCustomColour.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.btnCustomColour.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCustomColour.Location = new System.Drawing.Point(18, 157);
-            this.btnCustomColour.Name = "btnCustomColour";
-            this.btnCustomColour.Size = new System.Drawing.Size(222, 32);
-            this.btnCustomColour.TabIndex = 1;
-            this.btnCustomColour.Text = "Custom Colour";
-            this.btnCustomColour.UseVisualStyleBackColor = false;
-            this.btnCustomColour.Click += new System.EventHandler(this.btnCustomColour_Click);
+            btnCustomColour.BackColor = Color.Silver;
+            btnCustomColour.FlatAppearance.MouseDownBackColor = Color.Gray;
+            btnCustomColour.FlatAppearance.MouseOverBackColor = Color.LightGray;
+            btnCustomColour.FlatStyle = FlatStyle.Popup;
+            btnCustomColour.Location = new Point(18, 157);
+            btnCustomColour.Name = "btnCustomColour";
+            btnCustomColour.Size = new Size(222, 32);
+            btnCustomColour.TabIndex = 1;
+            btnCustomColour.Text = "Custom Colour";
+            btnCustomColour.UseVisualStyleBackColor = false;
+            btnCustomColour.Click += btnCustomColour_Click;
             // 
             // pbxBlue
             // 
-            this.pbxBlue.BackColor = System.Drawing.Color.MediumBlue;
-            this.pbxBlue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbxBlue.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxBlue.Location = new System.Drawing.Point(132, 119);
-            this.pbxBlue.Name = "pbxBlue";
-            this.pbxBlue.Size = new System.Drawing.Size(32, 32);
-            this.pbxBlue.TabIndex = 12;
-            this.pbxBlue.TabStop = false;
-            this.pbxBlue.Click += new System.EventHandler(this.pbxBlue_Click);
+            pbxBlue.BackColor = Color.MediumBlue;
+            pbxBlue.BorderStyle = BorderStyle.FixedSingle;
+            pbxBlue.Cursor = Cursors.Hand;
+            pbxBlue.Location = new Point(132, 119);
+            pbxBlue.Name = "pbxBlue";
+            pbxBlue.Size = new Size(32, 32);
+            pbxBlue.TabIndex = 12;
+            pbxBlue.TabStop = false;
+            pbxBlue.Click += pbxBlue_Click;
             // 
             // pbxDarkRed
             // 
-            this.pbxDarkRed.BackColor = System.Drawing.Color.DarkRed;
-            this.pbxDarkRed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbxDarkRed.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxDarkRed.Location = new System.Drawing.Point(18, 81);
-            this.pbxDarkRed.Name = "pbxDarkRed";
-            this.pbxDarkRed.Size = new System.Drawing.Size(32, 32);
-            this.pbxDarkRed.TabIndex = 3;
-            this.pbxDarkRed.TabStop = false;
-            this.pbxDarkRed.Click += new System.EventHandler(this.pbxDarkRed_Click);
+            pbxDarkRed.BackColor = Color.DarkRed;
+            pbxDarkRed.BorderStyle = BorderStyle.FixedSingle;
+            pbxDarkRed.Cursor = Cursors.Hand;
+            pbxDarkRed.Location = new Point(18, 81);
+            pbxDarkRed.Name = "pbxDarkRed";
+            pbxDarkRed.Size = new Size(32, 32);
+            pbxDarkRed.TabIndex = 3;
+            pbxDarkRed.TabStop = false;
+            pbxDarkRed.Click += pbxDarkRed_Click;
             // 
             // pbxSteelBlue
             // 
-            this.pbxSteelBlue.BackColor = System.Drawing.Color.SteelBlue;
-            this.pbxSteelBlue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbxSteelBlue.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxSteelBlue.Location = new System.Drawing.Point(94, 119);
-            this.pbxSteelBlue.Name = "pbxSteelBlue";
-            this.pbxSteelBlue.Size = new System.Drawing.Size(32, 32);
-            this.pbxSteelBlue.TabIndex = 11;
-            this.pbxSteelBlue.TabStop = false;
-            this.pbxSteelBlue.Click += new System.EventHandler(this.pbxSteelBlue_Click);
+            pbxSteelBlue.BackColor = Color.SteelBlue;
+            pbxSteelBlue.BorderStyle = BorderStyle.FixedSingle;
+            pbxSteelBlue.Cursor = Cursors.Hand;
+            pbxSteelBlue.Location = new Point(94, 119);
+            pbxSteelBlue.Name = "pbxSteelBlue";
+            pbxSteelBlue.Size = new Size(32, 32);
+            pbxSteelBlue.TabIndex = 11;
+            pbxSteelBlue.TabStop = false;
+            pbxSteelBlue.Click += pbxSteelBlue_Click;
             // 
             // pbxRed
             // 
-            this.pbxRed.BackColor = System.Drawing.Color.Red;
-            this.pbxRed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbxRed.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxRed.Location = new System.Drawing.Point(56, 81);
-            this.pbxRed.Name = "pbxRed";
-            this.pbxRed.Size = new System.Drawing.Size(32, 32);
-            this.pbxRed.TabIndex = 4;
-            this.pbxRed.TabStop = false;
-            this.pbxRed.Click += new System.EventHandler(this.pbxRed_Click);
+            pbxRed.BackColor = Color.Red;
+            pbxRed.BorderStyle = BorderStyle.FixedSingle;
+            pbxRed.Cursor = Cursors.Hand;
+            pbxRed.Location = new Point(56, 81);
+            pbxRed.Name = "pbxRed";
+            pbxRed.Size = new Size(32, 32);
+            pbxRed.TabIndex = 4;
+            pbxRed.TabStop = false;
+            pbxRed.Click += pbxRed_Click;
             // 
             // pbxSeaGreen
             // 
-            this.pbxSeaGreen.BackColor = System.Drawing.Color.SeaGreen;
-            this.pbxSeaGreen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbxSeaGreen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxSeaGreen.Location = new System.Drawing.Point(56, 119);
-            this.pbxSeaGreen.Name = "pbxSeaGreen";
-            this.pbxSeaGreen.Size = new System.Drawing.Size(32, 32);
-            this.pbxSeaGreen.TabIndex = 10;
-            this.pbxSeaGreen.TabStop = false;
-            this.pbxSeaGreen.Click += new System.EventHandler(this.pbxSeaGreen_Click);
+            pbxSeaGreen.BackColor = Color.SeaGreen;
+            pbxSeaGreen.BorderStyle = BorderStyle.FixedSingle;
+            pbxSeaGreen.Cursor = Cursors.Hand;
+            pbxSeaGreen.Location = new Point(56, 119);
+            pbxSeaGreen.Name = "pbxSeaGreen";
+            pbxSeaGreen.Size = new Size(32, 32);
+            pbxSeaGreen.TabIndex = 10;
+            pbxSeaGreen.TabStop = false;
+            pbxSeaGreen.Click += pbxSeaGreen_Click;
             // 
             // pbxOrangeRed
             // 
-            this.pbxOrangeRed.BackColor = System.Drawing.Color.OrangeRed;
-            this.pbxOrangeRed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbxOrangeRed.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxOrangeRed.Location = new System.Drawing.Point(94, 81);
-            this.pbxOrangeRed.Name = "pbxOrangeRed";
-            this.pbxOrangeRed.Size = new System.Drawing.Size(32, 32);
-            this.pbxOrangeRed.TabIndex = 5;
-            this.pbxOrangeRed.TabStop = false;
-            this.pbxOrangeRed.Click += new System.EventHandler(this.pbxOrangeRed_Click);
+            pbxOrangeRed.BackColor = Color.OrangeRed;
+            pbxOrangeRed.BorderStyle = BorderStyle.FixedSingle;
+            pbxOrangeRed.Cursor = Cursors.Hand;
+            pbxOrangeRed.Location = new Point(94, 81);
+            pbxOrangeRed.Name = "pbxOrangeRed";
+            pbxOrangeRed.Size = new Size(32, 32);
+            pbxOrangeRed.TabIndex = 5;
+            pbxOrangeRed.TabStop = false;
+            pbxOrangeRed.Click += pbxOrangeRed_Click;
             // 
             // pbxGreen
             // 
-            this.pbxGreen.BackColor = System.Drawing.Color.Green;
-            this.pbxGreen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbxGreen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxGreen.Location = new System.Drawing.Point(18, 119);
-            this.pbxGreen.Name = "pbxGreen";
-            this.pbxGreen.Size = new System.Drawing.Size(32, 32);
-            this.pbxGreen.TabIndex = 9;
-            this.pbxGreen.TabStop = false;
-            this.pbxGreen.Click += new System.EventHandler(this.pbxGreen_Click);
+            pbxGreen.BackColor = Color.Green;
+            pbxGreen.BorderStyle = BorderStyle.FixedSingle;
+            pbxGreen.Cursor = Cursors.Hand;
+            pbxGreen.Location = new Point(18, 119);
+            pbxGreen.Name = "pbxGreen";
+            pbxGreen.Size = new Size(32, 32);
+            pbxGreen.TabIndex = 9;
+            pbxGreen.TabStop = false;
+            pbxGreen.Click += pbxGreen_Click;
             // 
             // pbxGold
             // 
-            this.pbxGold.BackColor = System.Drawing.Color.Gold;
-            this.pbxGold.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbxGold.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxGold.Location = new System.Drawing.Point(132, 81);
-            this.pbxGold.Name = "pbxGold";
-            this.pbxGold.Size = new System.Drawing.Size(32, 32);
-            this.pbxGold.TabIndex = 6;
-            this.pbxGold.TabStop = false;
-            this.pbxGold.Click += new System.EventHandler(this.pbxGold_Click);
+            pbxGold.BackColor = Color.Gold;
+            pbxGold.BorderStyle = BorderStyle.FixedSingle;
+            pbxGold.Cursor = Cursors.Hand;
+            pbxGold.Location = new Point(132, 81);
+            pbxGold.Name = "pbxGold";
+            pbxGold.Size = new Size(32, 32);
+            pbxGold.TabIndex = 6;
+            pbxGold.TabStop = false;
+            pbxGold.Click += pbxGold_Click;
             // 
             // pbxYellow
             // 
-            this.pbxYellow.BackColor = System.Drawing.Color.Yellow;
-            this.pbxYellow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbxYellow.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxYellow.Location = new System.Drawing.Point(170, 81);
-            this.pbxYellow.Name = "pbxYellow";
-            this.pbxYellow.Size = new System.Drawing.Size(32, 32);
-            this.pbxYellow.TabIndex = 8;
-            this.pbxYellow.TabStop = false;
-            this.pbxYellow.Click += new System.EventHandler(this.pbxYellow_Click);
+            pbxYellow.BackColor = Color.Yellow;
+            pbxYellow.BorderStyle = BorderStyle.FixedSingle;
+            pbxYellow.Cursor = Cursors.Hand;
+            pbxYellow.Location = new Point(170, 81);
+            pbxYellow.Name = "pbxYellow";
+            pbxYellow.Size = new Size(32, 32);
+            pbxYellow.TabIndex = 8;
+            pbxYellow.TabStop = false;
+            pbxYellow.Click += pbxYellow_Click;
             // 
             // pbxLimeGreen
             // 
-            this.pbxLimeGreen.BackColor = System.Drawing.Color.LimeGreen;
-            this.pbxLimeGreen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbxLimeGreen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxLimeGreen.Location = new System.Drawing.Point(208, 81);
-            this.pbxLimeGreen.Name = "pbxLimeGreen";
-            this.pbxLimeGreen.Size = new System.Drawing.Size(32, 32);
-            this.pbxLimeGreen.TabIndex = 7;
-            this.pbxLimeGreen.TabStop = false;
-            this.pbxLimeGreen.Click += new System.EventHandler(this.pbxLimeGreen_Click);
+            pbxLimeGreen.BackColor = Color.LimeGreen;
+            pbxLimeGreen.BorderStyle = BorderStyle.FixedSingle;
+            pbxLimeGreen.Cursor = Cursors.Hand;
+            pbxLimeGreen.Location = new Point(208, 81);
+            pbxLimeGreen.Name = "pbxLimeGreen";
+            pbxLimeGreen.Size = new Size(32, 32);
+            pbxLimeGreen.TabIndex = 7;
+            pbxLimeGreen.TabStop = false;
+            pbxLimeGreen.Click += pbxLimeGreen_Click;
             // 
             // Settings
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.AutoScroll = true;
-            this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(704, 441);
-            this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Eurostile LT Std Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximizeBox = false;
-            this.MdiChildrenMinimizedAnchorBottom = false;
-            this.MinimizeBox = false;
-            this.Name = "Settings";
-            this.Text = "jBooth - Settings";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.pnlThemeAppearence.ResumeLayout(false);
-            this.pnlThemeAppearence.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxPurple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxPink)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxBlue)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxDarkRed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxSteelBlue)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxRed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxSeaGreen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxOrangeRed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxGreen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxGold)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxYellow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxLimeGreen)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleMode = AutoScaleMode.None;
+            AutoScroll = true;
+            AutoSize = true;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BackColor = Color.DarkGray;
+            ClientSize = new Size(704, 441);
+            Controls.Add(panel1);
+            Font = new Font("Eurostile LT Std Bold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4);
+            MaximizeBox = false;
+            MdiChildrenMinimizedAnchorBottom = false;
+            MinimizeBox = false;
+            Name = "Settings";
+            Text = "jBooth - Settings";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            pnlThemeAppearence.ResumeLayout(false);
+            pnlThemeAppearence.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxPurple).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxPink).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxBlue).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxDarkRed).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxSteelBlue).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxRed).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxSeaGreen).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxOrangeRed).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxGreen).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxGold).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxYellow).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxLimeGreen).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
